@@ -10,7 +10,6 @@ unzip(zipfile="./data/Dataset.zip",exdir="./data")
 
 # Step 1. Merge the training and the test sets to create common data set:
 
-# 1.Reading files
 # Reading train tables:
 X_train <- read.table("./data/UCI HAR Dataset/train/X_train.txt")
 Y_train <- read.table("./data/UCI HAR Dataset/train/y_train.txt")
@@ -27,7 +26,7 @@ features_data <- read.table('./data/UCI HAR Dataset/features.txt')
 # Reading activity labels:
 activity_labels = read.table('./data/UCI HAR Dataset/activity_labels.txt')
 
-# 2. Assigning column names:
+# Assigning column names:
 colnames(X_train) <- features_data[,2] 
 colnames(Y_train) <-"activity_ID"
 colnames(subject_train) <- "subject_ID"
@@ -38,7 +37,7 @@ colnames(subject_test) <- "subject_ID"
 
 colnames(activity_labels) <- c('activity_ID','activity_Type')
 
-# 3. Merging all data in one set:
+# Merging all data in one set:
 mrg_train <- cbind(Y_train, subject_train, X_train)
 mrg_test <- cbind(Y_test, subject_test, X_test)
 setData <- rbind(mrg_train, mrg_test)
@@ -66,7 +65,7 @@ setActivityNames <- merge(setDataIDMeanAndStd, activity_labels,
 # Step 4. Appropriately labeling the data set with descriptive variable names.
 # It was made during previous steps.
 
-# 5. Creating a second, independent tidy data set with the average of each variable for each activity and each subject:
+# Step 5. Creating a second, independent tidy data set with the average of each variable for each activity and each subject:
 
 # Making second tidy data set 
 sec_Tidy_Set <- aggregate(. ~subject_ID + activity_ID, setActivityNames, mean)
