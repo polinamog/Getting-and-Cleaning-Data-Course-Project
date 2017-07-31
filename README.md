@@ -8,4 +8,4 @@ The repo contains the R code and docs for the Data Science's spetialization for 
 
 `Run_analysis.R` contains the code to perform the analyses in the 5 steps. Launch in RStudio by importing the file.
 
-`TidyData.txt` is the result of the getting and cleaning work.
+`Second_Tidy_Data.txt` is the result of the getting and cleaning work.
