@@ -1,8 +1,8 @@
-# Getting-and-Cleaning-Data
+# Getting and Cleaning Data
 
 The repo contains the R code and docs for the Data Science's spetialization for the course Getting and Cleaning data by Johns Hopkins University.
 
-# Three-Files
+# Three Files
 
 `CodeBook.md` contains the description about using the data of this repo, and work with it to clean up the data.
 
