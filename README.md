@@ -1,6 +1,6 @@
 # Getting and Cleaning Data
 
-The repo contains the R code and docs for the Data Science's spetialization for the course Getting and Cleaning data by Johns Hopkins University.
+The repo contains the R code and docs for the Data Science's spetialization for the final assignment of the course Getting and Cleaning data by Johns Hopkins University.
 
 # Three Files
 
