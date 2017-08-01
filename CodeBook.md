@@ -20,7 +20,7 @@ Created variables: `X_train`, `Y_train`, `subject_train`, `X_test`, `Y_test`, `s
 
 ### Step 2. Extracting only the measurements on the mean and standard deviation for each measurement, which includes:
 Reading column names. 
-Create vector for defining ID, mean and standard deviation.
+Creating vector for defining ID, mean and standard deviation.
 Making necessary set.
 Created variables: `colNames`, `IDmean_and_std`, `setDataIDMeanAndStd`.
 
